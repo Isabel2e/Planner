@@ -51,32 +51,3 @@ function updateChart() {
         }
     });
 }
-
-const ctx = document.getElementById('expenseChart').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: labels,
-        datasets: [{
-            label: '# de Gastos',
-            data: data,
-            backgroundColor: [
-                'rgb(21, 52, 72, 0.2)',
-                'rgba(60, 91, 111.0.2)',
-                'rgb(148, 137, 121,0.2)',
-                'rgb(223, 208, 184,0.2)',
-                // Agrega más colores según tus necesidades
-            ],
-            borderColor: [    // Agrega más colores según tus necesidades
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
