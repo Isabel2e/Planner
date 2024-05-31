@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Gastos Personales</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestión de Gastos</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="category-input">
+            <input
+              type="text"
+              id="newCategoryInput"
+              placeholder="Nueva Categoría"
+            />
+            <button id="addCategoryButton">Agregar Categoría</button>
+            <ul id="categoryList"></ul>
+          </div>
+          <div class="expense-input">
+            <input
+              type="text"
+              id="descriptionInput"
+              placeholder="Descripción"
+            />
+            <input type="number" id="amountInput" placeholder="Monto" />
+            <select id="categoryInput">
+              <!-- Las categorías se llenarán dinámicamente -->
+            </select>
+            <button id="addExpenseButton">Agregar Gasto</button>
+          </div>
+        </div>
+        <div class="column">
+          <ul id="expenseList"></ul>
+        </div>
+      </div>
+      <a href="Finanzas.html"
+        ><button id="viewSummaryButton">Regresar</button></a
+      >
+      <a href="resumen.html"><button id="viewSummaryButton">Ver resumen y gráfico</button></a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
